@@ -21,7 +21,7 @@ export type Condition<T> =
     }
   | {[P in keyof T]?: Condition<T[P]>}
 
-export type Method = "get" | "put" | "post" | "delete"
+export type Method = "GET" | "PUT" | "POST" | "DELETE"
 
 export type Fetcher = <Body, T>(
   path: string,
