@@ -29,4 +29,12 @@ export type Fetcher = <Body, T>(
   body?: Body
 ) => Promise<T>
 
+
+export type Query<T> = {
+  condition?: Condition<T>
+  limit?: number
+  skip?: number
+}
+
+
 export type Modification<T> = Partial<T>
